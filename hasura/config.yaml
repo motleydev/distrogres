@@ -1,0 +1,7 @@
+version: 3
+endpoint: https://distrogres-fra.hasura.app
+admin_secret: z64wrfoVhzhIdC60X1VBE0FrcETFLm3hLvCEEwj5Zjv6g2kwKuQHQsXYcJCyahVf
+metadata_directory: metadata
+actions:
+  kind: synchronous
+  handler_webhook_baseurl: http://localhost:3000

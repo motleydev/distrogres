@@ -1,0 +1,13 @@
+- name: default
+  kind: cockroach
+  configuration:
+    connection_info:
+      database_url:
+        from_env: PG_ENV
+      isolation_level: read-committed
+      ssl_configuration:
+        sslmode: verify-full
+        sslrootcert:
+          from_env: ROOT_CERT
+      use_prepared_statements: false
+  tables: "!include default/tables/tables.yaml"
